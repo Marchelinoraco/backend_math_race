@@ -1,0 +1,12 @@
+GET http://localhost:6000/siswas
+
+###
+POST http://localhost:6000/siswa
+Content-Type: application/json
+
+{
+    "name": "Juan Jong"
+}
+
+###
+DELETE http://localhost:6000/siswa/3496eb94-0b76-4c02-9f03-31e6ee821b84

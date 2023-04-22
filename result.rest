@@ -1,0 +1,6 @@
+GET http://localhost:6000/results
+
+###
+POST http://localhost:6000/result
+Content-Type: application/json
+

@@ -1,0 +1,14 @@
+GET http://localhost:6000/questions
+
+###
+POST  http://localhost:6000/question
+Content-Type: application/json
+
+{
+    "name": "2 + 2",
+    "optionOne": "A",
+    "optionTwo": "B",
+    "optionThree": "C",
+    "answer": "B"
+}
+

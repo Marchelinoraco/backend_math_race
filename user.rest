@@ -1,0 +1,25 @@
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{   "name": "Marchelino",
+    "username": "lino",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/user/6755ff22-568e-462d-8fea-c26181e6640c
+
+###
+PATCH http://localhost:5000/user/6755ff22-568e-462d-8fea-c26181e6640c
+Content-Type: application/json
+
+{
+    "name": "George",
+    "username": "george"
+}
+
+###
+DELETE http://localhost:5000/user/6755ff22-568e-462d-8fea-c26181e6640c
