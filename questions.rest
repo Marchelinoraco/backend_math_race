@@ -1,7 +1,7 @@
-GET http://localhost:6000/questions
+GET http://localhost:4000/questions
 
 ###
-POST  http://localhost:6000/question
+POST  http://localhost:4000/question
 Content-Type: application/json
 
 {
@@ -9,6 +9,9 @@ Content-Type: application/json
     "optionOne": "A",
     "optionTwo": "B",
     "optionThree": "C",
-    "answer": "B"
+    "answer": "B",
+    "level": "Beginner"
 }
 
+###
+DELETE http://localhost:4000/question/07809723-12b7-4e7b-96c0-31aa30687a4d

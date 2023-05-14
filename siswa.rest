@@ -1,12 +1,12 @@
-GET http://localhost:6000/siswas
+GET http://localhost:4000/siswas
 
 ###
-POST http://localhost:6000/siswa
+POST http://localhost:4000/siswa
 Content-Type: application/json
 
 {
-    "name": "Juan Jong"
+    "name": "Jonathan Rompas"
 }
 
 ###
-DELETE http://localhost:6000/siswa/3496eb94-0b76-4c02-9f03-31e6ee821b84
+DELETE http://localhost:4000/siswa/55c2fe22-dc36-4403-aa8e-8a241369f2bd

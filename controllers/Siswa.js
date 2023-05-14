@@ -59,13 +59,14 @@ export const deleteSiswa = async (req, res) => {
     },
   });
 
+  const response = await Siswa.findAll();
   if (!siswa) return res.status(404).json({ msg: "Siswa tidak ditemukan" });
   try {
-    await Siswa.destroy({
+    await siswa.destroy({
       where: {
         id: siswa.id,
       },
     });
-    res.status(201).json({ msg: "Berhasil dihapus" });
+    res.status(201).json({ msg: "Berhasil dihapus", student: siswa });
   } catch (error) {}
 };

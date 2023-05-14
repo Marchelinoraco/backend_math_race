@@ -19,7 +19,7 @@ export const getQuestionById = async (req, res) => {
 };
 
 export const createQuestions = async (req, res) => {
-  const { name, optionOne, optionTwo, optionThree, answer } = req.body;
+  const { name, optionOne, optionTwo, optionThree, answer, level } = req.body;
   try {
     await Questions.create({
       name: name,
@@ -27,13 +27,14 @@ export const createQuestions = async (req, res) => {
       optionTwo: optionTwo,
       optionThree: optionThree,
       answer: answer,
+      level: level,
     });
     res.status(201).json({ msg: "Berhasil" });
   } catch (error) {}
 };
 
 export const updateQuestions = async (req, res) => {
-  const { name, optionOne, optionTwo, optionThree, answer } = req.body;
+  const { name, optionOne, optionTwo, optionThree, answer, level } = req.body;
   const question = await Questions.findOne({
     where: {
       uuid: req.params.id,
@@ -49,6 +50,7 @@ export const updateQuestions = async (req, res) => {
         optionTwo: optionTwo,
         optionThree: optionThree,
         answer: answer,
+        level: level,
       },
       {
         where: {

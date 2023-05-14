@@ -1,7 +1,13 @@
-POST http://localhost:5000/login
+GET  http://localhost:4000/me
+
+###
+POST http://localhost:4000/login
 Content-Type: application/json
 
-{
+{   
     "username": "lino",
     "password": "12345678"
 }
+
+###
+DELETE http://localhost:4000/question/d0283273-8b93-4719-a4c4-fe0abf6bae31

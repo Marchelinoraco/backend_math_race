@@ -1,10 +1,11 @@
-POST http://localhost:5000/user
+POST http://localhost:4000/user
 Content-Type: application/json
 
 {   "name": "Marchelino",
     "username": "lino",
-    "password": "12345678"
+    "password": "123"
 }
+
 
 ###
 GET http://localhost:5000/users
